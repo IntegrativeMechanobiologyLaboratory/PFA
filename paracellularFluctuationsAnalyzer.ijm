@@ -69,16 +69,16 @@ for(iframe=nPlusMinus+1;iframe<totFiles-nPlusMinus-1;iframe++){
 	imageCalculator("Multiply create 32-bit", "segment","bwImg");
 	rename("SegBw");
 	setOption("ScaleConversions", true);
-    run("8-bit");
-    setOption("BlackBackground", true);
+	run("8-bit");
+	setOption("BlackBackground", true);
 
-    // make the intercellular boundaries wider
-    run("Dilate");
+	// make the intercellular boundaries wider
 	run("Dilate");
 	run("Dilate");
 	run("Dilate");
 	run("Dilate");
-    run("Dilate");
+	run("Dilate");
+	run("Dilate");
 	run("Divide...", "value=255");
 	rename("bdryRgn");
 
@@ -104,8 +104,8 @@ for(iframe=nPlusMinus+1;iframe<totFiles-nPlusMinus-1;iframe++){
 
 	run("Clear Results");
 	close();
-    close();
-    close();
+    	close();
+    	close();
 }
 
 
